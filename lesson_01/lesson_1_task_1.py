@@ -1,2 +1,2 @@
-my_name = "Руслан"
+my_name = "Pуслан"
 print(my_name)
