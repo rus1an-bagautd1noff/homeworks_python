@@ -8,7 +8,7 @@ try:
     driver.get("http://the-internet.herokuapp.com/inputs")
     time.sleep(2)
 
-    number_input = driver.find_element(By.XPATH,'//input[@type="number"]')
+    number_input = driver.find_element(By.XPATH, '//input[@type="number"]')
     number_input.send_keys("Sky")
     time.sleep(2)
 

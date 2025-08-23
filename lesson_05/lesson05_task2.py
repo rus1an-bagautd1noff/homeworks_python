@@ -8,16 +8,16 @@ driver = webdriver.Chrome()
 
 try:
     driver.get("http://uitestingplayground.com/dynamicid")
-        
+
     wait = WebDriverWait(driver, 5)
-    
+
     blue_button = wait.until(
         EC.element_to_be_clickable((By.XPATH, "//button[text()='Click me']"))
     )
-    
+
     blue_button.click()
-    
+
     time.sleep(3)
-    
+
 finally:
     driver.quit()

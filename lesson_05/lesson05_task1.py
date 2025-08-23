@@ -6,15 +6,15 @@ driver = webdriver.Chrome()
 
 try:
     driver.get("http://uitestingplayground.com/classattr")
-    
+
     time.sleep(2)
-    
+
     blue_button = driver.find_element(By.CSS_SELECTOR, '.btn.btn-primary')
-    
+
     blue_button.click()
-    
+
     time.sleep(3)
-    
+
 finally:
-   
+
     driver.quit()
