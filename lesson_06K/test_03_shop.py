@@ -31,22 +31,13 @@ def test_shopping_cart(browser):
         EC.presence_of_element_located((By.CSS_SELECTOR, ".inventory_item"))
     )
 
-    backpack_xpath = (
-        "//divcontains(text(), 'Backpack')"
-        "/following-sibling::button"
-    )
+    backpack_xpath = "//divcontains(text(), 'Backpack')" "/following-sibling::button"
     browser.find_element(By.XPATH, backpack_xpath).click()
 
-    t_shirt_xpath = (
-        "//divcontains(text(), 'Bolt T-Shirt')"
-        "/following-sibling::button"
-    )
+    t_shirt_xpath = "//divcontains(text(), 'Bolt T-Shirt')" "/following-sibling::button"
     browser.find_element(By.XPATH, t_shirt_xpath).click()
 
-    onesie_xpath = (
-        "//divcontains(text(), 'Onesie')"
-        "/following-sibling::button"
-    )
+    onesie_xpath = "//divcontains(text(), 'Onesie')" "/following-sibling::button"
     browser.find_element(By.XPATH, onesie_xpath).click()
 
     browser.find_element(By.CSS_SELECTOR, ".shopping_cart_link").click()
@@ -64,10 +55,7 @@ def test_shopping_cart(browser):
     browser.find_element(By.ID, "continue").click()
 
     total_amount = WebDriverWait(browser, 10).until(
-        EC.presence_of_element_located((
-            By.CSS_SELECTOR,
-            ".summary_total_value"
-        ))
+        EC.presence_of_element_located((By.CSS_SELECTOR, ".summary_total_value"))
     )
 
     assert total_amount.text == "$58.29"

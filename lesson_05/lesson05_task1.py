@@ -9,7 +9,7 @@ try:
 
     time.sleep(2)
 
-    blue_button = driver.find_element(By.CSS_SELECTOR, '.btn.btn-primary')
+    blue_button = driver.find_element(By.CSS_SELECTOR, ".btn.btn-primary")
 
     blue_button.click()
 
