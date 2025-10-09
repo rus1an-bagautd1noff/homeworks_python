@@ -5,13 +5,13 @@ from selenium.webdriver.remote.webdriver import WebDriver
 class CalculatorPage:
     def __init__(self, driver: WebDriver):
         self.driver = driver
-        self.delay_field = (By.CSS_SELECTOR, '#delay')
-        self.result_field = (By.CSS_SELECTOR, '#result')
+        self.delay_field = (By.CSS_SELECTOR, "#delay")
+        self.result_field = (By.CSS_SELECTOR, "#result")
         self.buttons = {
-            '7': (By.XPATH, '//button[text()="7"]'),
-            '+': (By.XPATH, '//button[text()="+"]'),
-            '8': (By.XPATH, '//button[text()="8"]'),
-            '=': (By.XPATH, '//button[text()="="]')
+            "7": (By.XPATH, '//button[text()="7"]'),
+            "+": (By.XPATH, '//button[text()="+"]'),
+            "8": (By.XPATH, '//button[text()="8"]'),
+            "=": (By.XPATH, '//button[text()="="]'),
         }
 
     def set_delay(self, delay: int):

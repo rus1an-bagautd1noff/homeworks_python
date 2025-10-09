@@ -12,14 +12,10 @@ try:
 
     wait = WebDriverWait(driver, 10)
 
-    username_field = wait.until(
-        EC.presence_of_element_located((By.ID, "username"))
-    )
+    username_field = wait.until(EC.presence_of_element_located((By.ID, "username")))
     username_field.send_keys("tomsmith")
 
-    password_field = wait.until(
-        EC.presence_of_element_located((By.ID, "password"))
-    )
+    password_field = wait.until(EC.presence_of_element_located((By.ID, "password")))
     password_field.send_keys("SuperSecretPassword!")
 
     login_button = wait.until(

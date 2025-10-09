@@ -19,8 +19,7 @@ try:
 
     updated_button_text = WebDriverWait(driver, 15).until(
         EC.text_to_be_present_in_element(
-            (By.CSS_SELECTOR, "button.btn-primary"),
-            "SkyPro"
+            (By.CSS_SELECTOR, "button.btn-primary"), "SkyPro"
         )
     )
 

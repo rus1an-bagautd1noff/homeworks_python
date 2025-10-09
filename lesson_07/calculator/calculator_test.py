@@ -13,19 +13,17 @@ def driver():
 
 
 def test_calculator(driver):
-    driver.get(
-        'https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html'
-    )
+    driver.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
 
     calculator = CalculatorPage(driver)
 
     calculator.set_delay(45)
 
-    calculator.click_button('7')
-    calculator.click_button('+')
-    calculator.click_button('8')
-    calculator.click_button('=')
+    calculator.click_button("7")
+    calculator.click_button("+")
+    calculator.click_button("8")
+    calculator.click_button("=")
 
     time.sleep(45)
 
-    assert calculator.get_result() == '15'
+    assert calculator.get_result() == "15"
