@@ -1,8 +1,7 @@
-# test_database.py
 import pytest
 from db_connection import session
 from sqlalchemy import delete
-from models import Student
+from models import Studen
 
 
 @pytest.fixture(autouse=True)
