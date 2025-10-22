@@ -1,5 +1,5 @@
-# Проект с Allure
+## Запуск тестов
 
-## Установка зависимостей
+Для запуска тестов выполните команду:
 ```bash
-pip install -r requirements.txt
+pytest --alluredir=allure-results
