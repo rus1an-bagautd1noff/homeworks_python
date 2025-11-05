@@ -1,17 +1,13 @@
 from smartphone import Smartphone
 
-phone1 = Smartphone
-phone2 = Smartphone
-phone3 = Smartphone
-phone4 = Smartphone
-phone5 = Smartphone
-phone1 = ("Apple", "iPhone 15", "+79999999999")
-phone2 = ("Lenovo", "K15", "+79998888888")
-phone3 = ("Xiaomi", "15", "+79997777777")
-phone4 = ("Samsung", "Galaxy S21", "+79996666666")
-phone5 = ("Huawei", "Pura 80", "+79995555555")
+catalog = []
 
-catalog = [phone1, phone2, phone3, phone4, phone5]
+catalog.append(Smartphone("Apple", "iPhone 15 Pro", "+79123456789"))
+catalog.append(Smartphone("Samsung", "Galaxy S24", "+79234567890"))
+catalog.append(Smartphone("Xiaomi", "Redmi Note 13", "+79345678901"))
+catalog.append(Smartphone("Huawei", "P60 Pro", "+79456789012"))
+catalog.append(Smartphone("Google", "Pixel 8", "+79567890123"))
 
-for phones in catalog:
-    print(phones)
+print("Каталог смартфонов:")
+for phone in catalog:
+    print(phone)

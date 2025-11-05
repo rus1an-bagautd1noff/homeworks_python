@@ -1,4 +1,3 @@
-# test_database.py
 import pytest
 from db_connection import session
 from sqlalchemy import delete
